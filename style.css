@@ -52,6 +52,9 @@ button {
 /* Details */
 .blog-container {
     margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
 }
 
 .input-btn {
@@ -63,12 +66,12 @@ button {
     padding: 10px;
     border: 1px solid black;
     border-radius: 5px;
-    height: 200px;
-    width: 150 px;
+    /* height: 200px; */
+    /* width: 150 px; */
 }
 
 .links input {
-    margin: 5px 10px;
+    margin: 5px 5px;
     border: 0;
     border-radius: 3px;
     padding: 10px 15px;
@@ -78,23 +81,44 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* justify-content: space-evenly; */
-
+    column-gap: 24px;
     row-gap: 24px;
-
-    /* border: 2px solid red; */
-
 }
 
 .blog {
     /* height: 200px; */
-    margin-left: 24px;
-    border: 2px solid E8E8E8;
-    border-radius: 5px;
-    /* box-shadow: 5px 5px gray; */
+    /* margin-left: 24px; */
+    /* border: 2px solid blue; */
+    border-radius: 10px;
+    box-shadow: 0 0 3px lightgray;
 }
 
+.blog img {
+    width: 100%;
+}
+
+.blog-info {
+    margin: 15px;
+}
 
 .blog-container {
     display: flex;
     justify-content: center;
+}
+
+/* Footer */
+footer {
+    margin: 0;
+    background-color: #161616;
+    color: white;
+}
+
+footer h2 {
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
