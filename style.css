@@ -167,8 +167,30 @@ footer .social-website {
 }
 
 /* Media queries */
+/* Mobile version */
+@media screen and (max-width:672px) {
 
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
+    .input-btn {
+        flex-direction: column;
+        background-color: rgb(63, 7, 29);
+        border: none;
+    }
+
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+}
+
+/* Tablet version */
 @media screen and (min-width:673px) and (max-width:990px) {
 
     .blogs {
@@ -183,5 +205,6 @@ footer .social-website {
 
     .blog-container {
         flex-direction: column;
+        height: 300px;
     }
 }
