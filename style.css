@@ -45,7 +45,7 @@ button {
     padding: 5px 10px;
 }
 
-button a {
+a {
     text-decoration: none;
     color: black;
 }
@@ -74,6 +74,10 @@ button a {
     border-radius: 5px;
     /* height: 200px; */
     /* width: 150 px; */
+}
+
+.colorful-btn {
+    background-color: goldenrod;
 }
 
 .links input {
