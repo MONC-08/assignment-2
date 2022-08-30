@@ -4,6 +4,7 @@
     font-family: 'Lobster', cursive;
     font-family: 'Poppins', sans-serif;
     /* width: 1240px; */
+    margin: 0;
 }
 
 main {
@@ -43,7 +44,24 @@ button {
     border: 0;
     border-radius: 2px;
     padding: 5px 10px;
+    text-align: center;
+
+    cursor: pointer;
+    position: relative;
+    animation: sliding 5s ease-in-out infinite alternate;
 }
+
+@keyframes sliding {
+    0% {
+        padding-left: 2px;
+    }
+
+    100% {
+        background-color: salmon;
+        padding-right: 2px;
+    }
+}
+
 
 a {
     text-decoration: none;
@@ -133,13 +151,19 @@ footer h2 {
 }
 
 footer hr {
-    width: 95%;
+    width: 80%;
+    margin: auto;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+footer .social-website {
+    text-align: center;
+    font-size: 2em;
 }
 
 /* Media queries */
